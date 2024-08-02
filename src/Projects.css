@@ -289,7 +289,90 @@
 
     .technology-filters button {
         font-size: 0.75rem;
-        width: 100%
     }
     
+}
+
+@media screen and (max-width: 576px) {
+    .project-card {
+        padding: 5px;
+    }
+
+    .project-info {
+        padding: 5px;
+    }
+
+    .project-info h2 {
+        font-size: 1.25rem;
+    }
+
+    .project-info p {
+        font-size: 0.75rem;
+    }
+
+    .project-link, .modal-link {
+        font-size: 0.625rem;
+    }
+
+    .technologies-list {
+        padding: 5px;
+    }
+
+    .modal-overlay h2 {
+        font-size: 1.25rem;
+    }
+
+    .description-text {
+        width: 100%;
+    }
+
+    .modal-link {
+        font-size: 0.625rem;
+    }
+
+    .technology-filters button {
+        font-size: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-card {
+        padding: 5px;
+    }
+
+    .project-info {
+        padding: 5px;
+    }
+
+    .project-info h2 {
+        font-size: 1rem;
+    }
+
+    .project-info p {
+        font-size: 0.625rem;
+    }
+
+    .project-link, .modal-link {
+        font-size: 0.5rem;
+    }
+
+    .technologies-list {
+        padding: 5px;
+    }
+
+    .modal-overlay h2 {
+        font-size: 1rem;
+    }
+
+    .description-text {
+        width: 100%;
+    }
+
+    .modal-link {
+        font-size: 0.5rem;
+    }
+
+    .technology-filters button {
+        font-size: 0.5rem;
+    }
 }
