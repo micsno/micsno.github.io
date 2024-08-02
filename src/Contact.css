@@ -1,0 +1,149 @@
+.contact-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact-form {
+  background-color: var(--box-background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-background-color);
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 20%;
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+.submission-message {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.contact-info h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 50%;
+}
+
+.social-links :hover {
+  text-decoration: none;
+  color: var(--light-font);
+  font-size: 1.5rem;
+  transition: color 1s;
+  box-shadow: 0 0 10px var(--primary-color);
+  border-radius: 50%;
+}
+
+.SocialIcons {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+/* Basic styling for the text and icon alignment */
+.contact-info {
+  text-align: center; /* Center the content horizontally */
+}
+
+.contact-item {
+  display: flex; /* Aligns icon and text vertically */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 20px 0; /* Space between items */
+}
+
+.contact-info p {
+  color: var(--text-color);
+  font-size: 1rem; /* Adjust font size as needed */
+  margin: 5px 0; /* Margin around the text */
+}
+
+.material-symbols-outlined {
+  font-size: 1.4rem; /* Adjust icon size if necessary */
+  margin-bottom: 5px; /* Space between the icon and text */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}

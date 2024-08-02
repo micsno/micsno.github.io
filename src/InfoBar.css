@@ -1,0 +1,158 @@
+.info-bar {
+    box-shadow: 0 0 8px #d35400;
+    padding: 20px;
+    background-color: var(--background-secondary-color);
+    color: #ecf0f1;
+    border-radius: 10px;
+    margin: 20px 20px;
+    position: relative;
+    max-height: 110vh;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.info-bar h3 {
+    color: var(--primary-color);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .info-bar {
+        margin: 10px 10px;
+        z-index: 1;
+    }
+}
+
+/* Header styling */
+.info-header h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Content styling */
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Profile photo styling */
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    mask-image: radial-gradient(circle, white 60%, transparent 70%);
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* Info text styling */
+.info-text {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 100%;
+    color: #ecf0f1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons styling */
+.info-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #e67e22;
+    color: #ecf0f1;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+/* Button container styling for responsiveness */
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Social links styling */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .info-bar {
+        width: 95%;
+    }
+
+    .profile-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info-text {
+        width: 90%;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-photo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-text {
+        width: 95%;
+        font-size: 100%;
+    }
+}
