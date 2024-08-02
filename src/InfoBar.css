@@ -4,23 +4,17 @@
     background-color: var(--background-secondary-color);
     color: #ecf0f1;
     border-radius: 10px;
-    margin: 20px 20px;
+    margin: 20px 20px auto; /* Keskittää säilön vaakasuunnassa */
     position: relative;
     max-height: 110vh;
+    max-width: 900px; /* Varmistaa, että säilö ei ylitä 900px leveyttä */
+    min-width: 400px; /* Varmistaa, että säilö ei ole liian kapea */
     overflow-y: auto;
     z-index: 1;
 }
 
 .info-bar h3 {
     color: var(--primary-color);
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    .info-bar {
-        margin: 10px 10px;
-        z-index: 1;
-    }
 }
 
 /* Header styling */
@@ -43,8 +37,28 @@
     justify-content: center;
 }
 
-li {
-    list-style-type: none;
+.info-text {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px; /* Varmistaa, että teksti ei ylitä 900px leveyttä */
+    color: #ecf0f1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%; /* Varmistaa, että teksti ei ylitä säilöä */
+}
+
+.info-text a {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 /* Profile photo styling */
@@ -58,25 +72,12 @@ li {
     border-radius: 50%;
 }
 
-/* Info text styling */
-.info-text {
-    background-color: var(--background-color);
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    font-size: 100%;
-    color: #ecf0f1;
-    text-align: center;
-    margin-bottom: 20px;
+/* List styling */
+li {
+    list-style-type: none;
 }
 
 /* Buttons styling */
-.info-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-/* Button styling */
 .btn {
     background-color: #e67e22;
     color: #ecf0f1;
@@ -91,7 +92,6 @@ li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Button hover effect */
 .btn:hover {
     background-color: #d35400;
     transform: scale(1.05);
@@ -106,21 +106,6 @@ li {
     justify-content: center;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .btn {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .btn {
-        font-size: 0.8rem;
-        padding: 8px 16px;
-    }
-}
-
 /* Social links styling */
 .social-links {
     display: flex;
@@ -128,9 +113,27 @@ li {
     margin-top: 20px;
 }
 
-/* Responsive design */
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .info-bar {
+        margin: 10px auto; /* Keskittää säilön vaakasuunnassa */
+        width: 90%;
+    }
+
+    .info-text {
+        width: 85%;
+        font-size: 100%;
+    }
+
+    .info-text p {
+        font-size: 100%;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .info-bar {
+        margin: 10px auto; /* Keskittää säilön vaakasuunnassa */
         width: 95%;
     }
 

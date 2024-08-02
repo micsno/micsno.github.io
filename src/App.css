@@ -48,26 +48,30 @@ html, body {
 .main-layout {
   display: flex;
   flex: 1;
+  flex-direction: row; /* Aseta perus suunta vaakasuunnaksi */
   width: 100%;
+  overflow: hidden;
 }
 
 /* InfoBar styling */
 .info-bar {
-  width: 25%;
+  flex: 1;
   padding: 20px;
   background-color: var(--background-secondary-color);
   border-right: 1px solid var(--border-color);
   border-radius: 5px;
   box-sizing: border-box;
   overflow-y: auto;
+  max-width: 25%;
 }
 
 /* Main container styling */
 .main-container {
-  width: 75%;
+  flex: 3;
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
+  min-width: auto; /* Poista minimileveys */
 }
 
 /* Footer styling */
@@ -86,24 +90,43 @@ footer {
 }
 
 /* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .main-container {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-layout {
-    flex-direction: column;
+    flex-direction: column; /* Aseta perus suunta pystysuunnaksi pienillä näytöillä */
   }
 
   .info-bar,
   .main-container {
     width: 100%;
+    min-width: 100%;
   }
 
   .info-bar {
     border-right: none;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border-color);
+    max-width: 100%; /* Maksimileveys 100% pystysuunnassa */
+  }
+
+  .main-container {
+    min-width: 0; /* Poista minimileveys pystysuunnassa */
   }
 }
 
 @media screen and (max-width: 480px) {
   /* Further adjustments for very small screens if needed */
+  .info-bar {
+    padding: 15px; /* Vähennä tyhjennystä pienillä näytöillä */
+  }
+
+  .main-container {
+    padding: 15px; /* Vähennä tyhjennystä pienillä näytöillä */
+  }
 }
 
 /* Fonts */

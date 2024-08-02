@@ -224,9 +224,9 @@
 }
 
 /* Technology Filters */
-
 .technology-filters {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -237,19 +237,20 @@
     background-color: transparent;
     color: var(--primary-color);
     padding: 5px 10px;
-    margin: 0 5px;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
     font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
 }
 
 .technology-filters button:hover {
     background-color: #d35400;
-    color: var(--light-font);
+    color: #fff;
 }
 
-
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .project-card {
         padding: 10px;
@@ -289,8 +290,8 @@
 
     .technology-filters button {
         font-size: 0.75rem;
+        padding: 4px 8px;
     }
-    
 }
 
 @media screen and (max-width: 576px) {
@@ -332,6 +333,7 @@
 
     .technology-filters button {
         font-size: 0.625rem;
+        padding: 4px 8px;
     }
 }
 
@@ -374,5 +376,6 @@
 
     .technology-filters button {
         font-size: 0.5rem;
+        padding: 3px 6px;
     }
 }
