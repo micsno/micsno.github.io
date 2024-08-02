@@ -54,6 +54,7 @@
 
 .welcome-text h2 {
   font-size: 1.5rem;
+  font-weight: 500;
   background: linear-gradient(45deg, #f3ec78, var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
