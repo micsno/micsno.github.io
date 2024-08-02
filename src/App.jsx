@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import '/src/App.css';
-import Header from '/src/Header.jsx';
-import InfoBar from '/src/InfoBar.jsx';
-import Home from '/src/Home.jsx';
-import About from '/src/About.jsx';
-import Projects from '/src/Projects.jsx';
-import Contact from '/src/Contact.jsx';
-import Loading from '/src/Loading';
+import './App.css';  // Ensure correct path and file extension
+import Header from './Header';
+import InfoBar from './InfoBar';
+import Home from './Home';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
+import Loading from './Loading';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import Footer from '/src/Footer';
+import Footer from './Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
