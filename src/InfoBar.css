@@ -143,6 +143,10 @@ li {
         width: 90%;
         font-size: 100%;
     }
+
+    .info-text p {
+        font-size: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -153,6 +157,10 @@ li {
 
     .info-text {
         width: 95%;
+        font-size: 100%;
+    }
+
+    .info-text p {
         font-size: 100%;
     }
 }
