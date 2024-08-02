@@ -6,7 +6,7 @@
     border-radius: 10px;
     margin: 20px 20px auto;
     position: relative;
-    max-height: auto;
+    max-height: 90vh;
     max-width: 900px;
     min-width: 400px;
     overflow-y: auto;
