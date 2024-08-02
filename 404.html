@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      (function() {
+        var redirect = function() {
+          window.location.href = '/';
+        };
+        window.addEventListener('popstate', redirect);
+        redirect();
+      })();
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

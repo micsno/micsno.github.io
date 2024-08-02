@@ -7,6 +7,7 @@ import tripcostcalculator from '/src/assets/tripcostcalculator.png';
 import tictactoe from '/src/assets/tictactoe.png';
 import orange from '/src/assets/orangeforum.png';
 import luovacraft from '/src/assets/luovacrafttemplate.jpg';
+import portfolio from '/src/assets/portfolio.png';
 
 const Modal = ({ isOpen, onClose, project }) => {
     const [isImageZoomed, setImageZoomed] = useState(false);
@@ -69,8 +70,8 @@ function Projects() {
             title: "Own Portfolio",
             description: 'This portfolio website was developed to showcase my skills and projects as a web developer. It features a clean and responsive design with smooth animations and interactive elements.',
             fullDescription: "This portfolio website was developed to showcase my skills and projects as a web developer. It features a clean and responsive design with smooth animations and interactive elements. Built with React, CSS, and HTML, the site provides an engaging user experience that highlights my work and expertise. The website includes sections for my projects, about section, and contact information, allowing visitors to explore my portfolio and get in touch. The project demonstrates my proficiency in front-end development, including layout design, state management, and component-based architecture. It also showcases my creativity and attention to detail in crafting visually appealing and user-friendly web experiences.",
-            imageUrl: '/src/assets/portfolio.png',
-            githubUrl: '',
+            imageUrl: portfolio,
+            githubUrl: 'https://github.com/micsno/micsno.github.io',
             technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML5'],
         },
         {
