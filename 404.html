@@ -3,15 +3,10 @@
 <head>
   <meta http-equiv="refresh" content="0; url=/" />
   <script>
-    // Redirect all paths to the root index.html
     (function() {
-      var redirect = function() {
-        var pathname = window.location.pathname;
-        var newUrl = window.location.origin + '/#' + pathname;
-        window.location.href = newUrl;
-      };
-      // Redirect the initial request
-      redirect();
+      var pathname = window.location.pathname;
+      var newUrl = window.location.origin + '/#' + pathname;
+      window.location.href = newUrl;
     })();
   </script>
 </head>
