@@ -61,7 +61,7 @@ const Home = () => {
         <div>
           <h4>You can view my projects on <Link to="/projects" className='project-route'>Project page</Link> or on GitHub</h4>
           <a href="https://github.com/micsno" target='_blank' rel="noopener noreferrer" className="btn">View On GitHub</a>
-        </div>
+        </div><br />
       </section>
       <section className="about-preview">
         <h2>About Me</h2>
