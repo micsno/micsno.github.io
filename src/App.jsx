@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css'; 
+import './App.css';  // Ensure correct path and file extension
 import Header from './Header';
 import InfoBar from './InfoBar';
 import Home from './Home';
