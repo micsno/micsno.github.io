@@ -6,7 +6,7 @@
     border-radius: 10px;
     margin: 20px 20px auto;
     position: relative;
-    max-height: 100vh;
+    max-height: 105vh;
     max-width: 900px;
     min-width: 400px;
     overflow-y: auto;
@@ -118,7 +118,7 @@ li {
     .info-bar {
         margin: 10px auto;
         width: 90%;
-        max-height: 100vh;
+        max-height: 105vh;
     }
 
     .info-text {
@@ -136,7 +136,7 @@ li {
     .info-bar {
         margin: 10px auto;
         width: 95%;
-        max-height: 100vh;
+        max-height: 105vh;
     }
 
     .profile-photo img {
