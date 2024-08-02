@@ -9,7 +9,7 @@ const Home = () => {
 
   const words = [
     "Web Developer",
-    "Front-End Developer",
+    "Front-End Dev",
     "Creative Coder",
     "Digital Innovator",
     "Content Creator",
