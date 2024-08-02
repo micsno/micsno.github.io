@@ -248,3 +248,48 @@
     background-color: #d35400;
     color: var(--light-font);
 }
+
+
+@media screen and (max-width: 768px) {
+    .project-card {
+        padding: 10px;
+    }
+
+    .project-info {
+        padding: 10px;
+    }
+
+    .project-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-info p {
+        font-size: 0.875rem;
+    }
+
+    .project-link, .modal-link {
+        font-size: 0.75rem;
+    }
+
+    .technologies-list {
+        padding: 10px;
+    }
+
+    .modal-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .description-text {
+        width: 90%;
+    }
+
+    .modal-link {
+        font-size: 0.75rem;
+    }
+
+    .technology-filters button {
+        font-size: 0.75rem;
+        width: 100%
+    }
+    
+}
