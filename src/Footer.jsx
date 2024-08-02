@@ -1,4 +1,4 @@
-// Footer.js
+// Footer.jsx
 import React from 'react';
 import '/src/Footer.css';
 import logo from '/src/assets/logo.svg'; // Adjust the path as needed

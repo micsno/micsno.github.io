@@ -48,7 +48,7 @@ html, body {
 .main-layout {
   display: flex;
   flex: 1;
-  flex-direction: row; /* Aseta perus suunta vaakasuunnaksi */
+  flex-direction: row;
   width: 100%;
   overflow: hidden;
 }
@@ -71,7 +71,7 @@ html, body {
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
-  min-width: auto; /* Poista minimileveys */
+  min-width: auto;
 }
 
 /* Footer styling */
@@ -98,7 +98,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .main-layout {
-    flex-direction: column; /* Aseta perus suunta pystysuunnaksi pienillä näytöillä */
+    flex-direction: column;
   }
 
   .info-bar,
@@ -110,22 +110,21 @@ footer {
   .info-bar {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
-    max-width: 100%; /* Maksimileveys 100% pystysuunnassa */
+    max-width: 100%; 
   }
 
   .main-container {
-    min-width: 0; /* Poista minimileveys pystysuunnassa */
+    min-width: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* Further adjustments for very small screens if needed */
   .info-bar {
-    padding: 15px; /* Vähennä tyhjennystä pienillä näytöillä */
+    padding: 15px;
   }
 
   .main-container {
-    padding: 15px; /* Vähennä tyhjennystä pienillä näytöillä */
+    padding: 15px;
   }
 }
 

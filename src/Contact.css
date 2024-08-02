@@ -126,24 +126,24 @@
 
 /* Basic styling for the text and icon alignment */
 .contact-info {
-  text-align: center; /* Center the content horizontally */
+  text-align: center; 
 }
 
 .contact-item {
-  display: flex; /* Aligns icon and text vertically */
-  flex-direction: column; /* Stack icon and text vertically */
-  align-items: center; /* Center items horizontally */
-  margin: 20px 0; /* Space between items */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 20px 0;
 }
 
 .contact-info p {
   color: var(--text-color);
-  font-size: 1rem; /* Adjust font size as needed */
-  margin: 5px 0; /* Margin around the text */
+  font-size: 1rem;
+  margin: 5px 0; 
 }
 
 .material-symbols-outlined {
-  font-size: 1.4rem; /* Adjust icon size if necessary */
-  margin-bottom: 5px; /* Space between the icon and text */
-  vertical-align: middle; /* Align the icon vertically with the text */
+  font-size: 1.4rem; 
+  margin-bottom: 5px; 
+  vertical-align: middle; 
 }
