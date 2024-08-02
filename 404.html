@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script>
-      (function() {
-        var redirect = function() {
-          window.location.href = '/';
-        };
-        window.addEventListener('popstate', redirect);
-        redirect();
-      })();
-    </script>
-  </head>
-  <body>
-  </body>
+<head>
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>
+    // Redirect all paths to the root index.html
+    (function() {
+      var redirect = function() {
+        var pathname = window.location.pathname;
+        var newUrl = window.location.origin + '/#' + pathname;
+        window.location.href = newUrl;
+      };
+      // Redirect the initial request
+      redirect();
+    })();
+  </script>
+</head>
+<body>
+</body>
 </html>
