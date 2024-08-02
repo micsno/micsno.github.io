@@ -13,9 +13,9 @@ const Footer = () => {
                 <div className="footer-text">
                     <p>&copy; 2024 Tomi Kouvala</p>
                     <ul className="footer-links">
-                        <li><SocialIcon url="mailto:tomi.kouvala@pm.me" network="email" style={{ height: 30, width: 30 }} bgColor='#000' /></li>
-                        <li><SocialIcon url="https://www.github.com/micsno" network="github" style={{ height: 30, width: 30 }} bgColor='#000' /></li>
-                        <li><SocialIcon url="https://www.linkedin.com/in/tomikouvala" network="linkedin" style={{ height: 30, width: 30 }} bgColor='#000' /></li>
+                        <li><SocialIcon url="mailto:tomi.kouvala@pm.me" network="email" style={{ height: 30, width: 30 }} bgColor='#000' target='_blank' /></li>
+                        <li><SocialIcon url="https://www.github.com/micsno" network="github" style={{ height: 30, width: 30 }} bgColor='#000' target='_blank' /></li>
+                        <li><SocialIcon url="https://www.linkedin.com/in/tomikouvala" network="linkedin" style={{ height: 30, width: 30 }} bgColor='#000' target='_blank' /></li>
                     </ul>
                 </div>
             </div>

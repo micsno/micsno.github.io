@@ -99,9 +99,9 @@ const Contact = () => {
           <p><span className='material-symbols-outlined'> globe </span> Oulu, Finland</p>
 
           <div className="social-links">
-            <SocialIcon url="https://www.github.com/micsno" network='github' />
-            <SocialIcon url="https://www.linkedin.com/in/tomikouvala" network='linkedin' />
-            <SocialIcon url="mailto:tomi.kouvala@pm.me" network="email" />
+            <SocialIcon url="https://www.github.com/micsno" network='github' target='_blank' />
+            <SocialIcon url="https://www.linkedin.com/in/tomikouvala" network='linkedin' target='_blank' />
+            <SocialIcon url="mailto:tomi.kouvala@pm.me" network="email" target='_blank' />
           </div>
         </div>
       </div>
