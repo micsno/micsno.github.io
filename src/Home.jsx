@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; // Ensure this import is included
-import './Home.css'; // Corrected the import path if needed
+import { Link } from 'react-router-dom';
+import './Home.css';
 
 const Home = () => {
   const [displayedText, setDisplayedText] = useState('');

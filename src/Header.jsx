@@ -23,7 +23,6 @@ function Header() {
         setIsMenuOpen(false);
     };
 
-    // Close menu when clicking outside of menu or hamburger button
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (
