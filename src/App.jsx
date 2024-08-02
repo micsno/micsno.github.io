@@ -7,7 +7,7 @@ import About from '/src/About.jsx';
 import Projects from '/src/Projects.jsx';
 import Contact from '/src/Contact.jsx';
 import Loading from '/src/Loading';
-import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from '/src/Footer';
 
 function App() {
