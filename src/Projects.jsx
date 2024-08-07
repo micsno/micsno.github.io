@@ -8,6 +8,7 @@ import tictactoe from '/src/assets/tictactoe.png';
 import orange from '/src/assets/orangeforum.png';
 import luovacraft from '/src/assets/luovacrafttemplate.jpg';
 import portfolio from '/src/assets/portfolio.png';
+import koodikaveri from '/src/assets/koodikaveri.jpg';
 
 const Modal = ({ isOpen, onClose, project }) => {
     const [isImageZoomed, setImageZoomed] = useState(false);
@@ -81,6 +82,14 @@ function Projects() {
             imageUrl: ricas,
             websiteURL: 'https://www.ricas.fi',
             technologies: ['HTML5', 'CSS', 'JavaScript'],
+        },
+        {
+            title: 'Koodikaveri',
+            description: 'Koodikaveri is a Discord bot that assists programmers by providing information and examples for languages like Python and JavaScript, searching Stack Overflow, finding documentation links, displaying code examples, checking code syntax, and sending welcome messages. Currently, the bot supports only Finnish.',
+            fullDescription: 'Koodikaveri Bot is a versatile and user-friendly Discord bot designed to support programmers and developers by providing comprehensive programming guidance and information. This bot is equipped with a range of commands that enhance the coding experience and facilitate learning. With Koodikaveri Bot, users can access detailed information and practical examples for popular programming languages including Python, JavaScript, HTML, CSS, and React. The bot also enables users to search for questions and answers on Stack Overflow, making it easier to find solutions to coding problems. Additionally, it retrieves documentation links for various programming languages and frameworks, offering quick access to essential resources. The bot is designed to display code examples in multiple languages and perform syntax checks on code snippets to help identify and correct errors. Furthermore, it enhances community interaction by sending welcome messages to new members, fostering a friendly and supportive environment. Koodikaveri Bot aims to streamline the coding process, provide valuable learning resources, and improve the overall experience for developers within the Discord community.',
+            imageUrl: koodikaveri,
+            githubUrl: 'https://github.com/micsno/koodikaveri',
+            technologies: ['Python', 'Discord API'],
         },
         {
             title: 'Cherry Library',

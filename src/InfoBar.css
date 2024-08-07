@@ -4,11 +4,12 @@
     background-color: var(--background-secondary-color);
     color: #ecf0f1;
     border-radius: 10px;
-    margin: 20px 20px auto;
+    margin: 20px auto;
     position: relative;
-    max-height: 105vh;
+    width: 100%;
     max-width: 900px;
     min-width: 400px;
+    max-height: 100vh;
     overflow-y: auto;
     z-index: 1;
 }
@@ -116,56 +117,58 @@ li {
 /* Responsive adjustments */
 @media screen and (max-width: 1024px) {
     .info-bar {
-        margin: 10px auto;
-        width: 90%;
-        max-height: 105vh;
+        margin: 20px auto;
+        /* No need to adjust height; height will adapt to content */
     }
 
     .info-text {
         width: 85%;
-        font-size: 100%;
+        font-size: 1rem; /* Adjusted font-size using rem units for scalability */
     }
 
     .info-text p {
-        font-size: 100%;
+        font-size: 1rem; /* Adjusted font-size using rem units for scalability */
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .info-bar {
-        margin: 10px auto;
-        width: 95%;
-        max-height: 105vh;
+        margin: 20px auto;
+        /* No need to adjust height; height will adapt to content */
     }
 
     .profile-photo img {
         width: 120px;
-        height: 120px;
+        height: 120px; /* Ensuring profile photo sizes adjust on medium screens */
     }
 
     .info-text {
         width: 90%;
-        font-size: 100%;
+        font-size: 0.9rem; /* Slightly smaller font-size for better readability on smaller screens */
     }
 
     .info-text p {
-        font-size: 100%;
+        font-size: 0.9rem; /* Consistent font-size with .info-text */
     }
 }
 
 @media screen and (max-width: 480px) {
     .profile-photo img {
         width: 100px;
-        height: 100px;
+        height: 100px; /* Ensuring profile photo sizes adjust on small screens */
+    }
+
+    .info-bar {
+        margin: 20px auto;
+        /* No need to adjust height; height will adapt to content */
     }
 
     .info-text {
         width: 95%;
-        font-size: 100%;
+        font-size: 0.8rem; /* Further reduced font-size for very small screens */
     }
 
     .info-text p {
-        font-size: 100%;
+        font-size: 0.8rem; /* Consistent font-size with .info-text */
     }
 }
