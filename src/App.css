@@ -53,17 +53,70 @@ html, body {
   overflow: hidden;
 }
 
-/* InfoBar styling */
-.info-bar {
-  flex: 1;
-  padding: 20px;
-  background-color: var(--background-secondary-color);
-  border-right: 1px solid var(--border-color);
+/* InfoBar toggle button styling */
+.info-bar-toggle {
+  color: var(--light-font);
+  background-color: transparent;
+  background: transparent;
+  background-color: #121212;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: right;
   border-radius: 5px;
-  box-sizing: border-box;
-  overflow-y: auto;
-  max-width: 25%;
+  transition: background-color 0.3s;
+  z-index: 2;
 }
+
+.info-bar-toggle:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Navbar button styles */
+.info-bar-toggle .navbar-button {
+  height: 40px;
+  font-size: 14px;
+  background-color: transparent;
+  color: var(--light-font);
+}
+
+/* Sidebar button styles */
+.sidebar-button {
+  height: 60px; /* Suurempi korkeus */
+  width: 40px; /* Suurempi leveys */
+  font-size: 24px; /* Suurempi fonttikoko */
+  position: fixed;
+  top: 20px; /* Ylös: säädä tarpeen mukaan */
+  right: 20px; /* Oikealle: säädä tarpeen mukaan */
+  background-color: var(--secondary-color); /* Taustaväri */
+  color: white; /* Tekstiväri */
+  border: none;
+  border-radius: 50%; /* Pyöreä nappi */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Varjostus */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Siirtymäefektit */
+  z-index: 10; /* Varmista, että nappi on muiden yläpuolella */
+}
+
+.info-bar-toggle .sidebar-button:hover {
+  background-color: var(--primary-color); /* Väri hover-tilassa */
+  transform: scale(1.1); /* Suurentaa nappia hover-tilassa */
+}
+
+.info-bar-toggle .sidebar-button:focus {
+  outline: none; /* Poistaa oletusfokuksen */
+}
+
+.info-bar-toggle .sidebar-button i {
+  font-size: 24px; /* Ikonin koko */
+}
+
 
 /* Main container styling */
 .main-container {

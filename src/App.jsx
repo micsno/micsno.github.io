@@ -12,6 +12,8 @@ import Footer from './Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [infoBarVisible, setInfoBarVisible] = useState(false);
+  const [isNavbar, setIsNavbar] = useState(true);
 
   const handleLoadingComplete = () => {
     setLoading(false);
@@ -21,6 +23,10 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
+  const toggleInfoBar = () => {
+    setInfoBarVisible(prevState => !prevState);
+  };
+
   return (
     <Router>
       <div className="app">
@@ -28,7 +34,13 @@ function App() {
         <div className={`main-content ${loading ? 'fade-out' : ''}`}>
           <Header />
           <div className="main-layout">
-            <InfoBar />
+            <button
+              className={`info-bar-toggle ${isNavbar ? 'navbar-button' : 'sidebar-button'}`}
+              onClick={toggleInfoBar}
+            >
+              {isNavbar ? 'Profile ↓' : '→'}
+            </button>
+            {infoBarVisible && <InfoBar />}
             <div className="main-container">
               <Routes>
                 <Route path="/" element={<Home />} />

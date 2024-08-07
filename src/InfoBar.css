@@ -1,26 +1,25 @@
 .info-bar {
     box-shadow: 0 0 8px #d35400;
     padding: 20px;
+    padding-left: 40px;
     background-color: var(--background-secondary-color);
     color: #ecf0f1;
     border-radius: 10px;
     margin: 20px auto;
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    min-width: 400px;
-    max-height: 110vh;
+    position: fixed; /* Changed to fixed to stay in position */
+    width: 400px; /* Fixed width */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
     height: auto; 
+    max-height: calc(100vh - 60px); /* Adjust based on header height */
     overflow-y: auto;
     z-index: 1;
 }
-
-.info-bar h3 {
+  
+  .info-bar h3 {
     color: var(--primary-color);
-}
-
-/* Header styling */
-.info-header h1 {
+  }
+  
+  .info-header h1 {
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 2rem;
@@ -29,17 +28,16 @@
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-/* Content styling */
-.info-content {
+  }
+  
+  .info-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.info-text {
+  }
+  
+  .info-text {
     background-color: var(--background-color);
     padding: 20px;
     border-radius: 10px;
@@ -48,23 +46,22 @@
     color: #ecf0f1;
     text-align: center;
     margin-bottom: 20px;
-}
-
-.info-text p {
+  }
+  
+  .info-text p {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
     max-width: 100%;
-}
-
-.info-text a {
+  }
+  
+  .info-text a {
     display: inline-block;
     max-width: 100%;
     overflow-wrap: break-word;
-}
-
-/* Profile photo styling */
-.profile-photo img {
+  }
+  
+  .profile-photo img {
     width: 200px;
     height: 200px;
     mask-image: radial-gradient(circle, white 60%, transparent 70%);
@@ -72,15 +69,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     border-radius: 50%;
-}
-
-/* List styling */
-li {
+  }
+  
+  li {
     list-style-type: none;
-}
-
-/* Buttons styling */
-.btn {
+  }
+  
+  .btn {
     background-color: #e67e22;
     color: #ecf0f1;
     padding: 12px 24px;
@@ -92,87 +87,85 @@ li {
     display: inline-block;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     background-color: #d35400;
     transform: scale(1.05);
-}
-
-/* Button container styling for responsiveness */
-.btn-container {
+  }
+  
+  .btn-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/* Social links styling */
-.social-links {
+  }
+  
+  .social-links {
     display: flex;
     gap: 10px;
     margin-top: 20px;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 1024px) {
+  }
+  
+  @media screen and (max-width: 1024px) {
     .info-bar {
-        margin: 20px auto;
-        max-height: 100vh;
-        height: auto; 
+      margin: 20px auto;
+      max-height: 100vh;
+      height: auto;
     }
-
+  
     .info-text {
-        width: 85%;
-        font-size: 1rem; /* Adjusted font-size using rem units for scalability */
+      width: 85%;
+      font-size: 1rem;
     }
-
+  
     .info-text p {
-        font-size: 1rem; /* Adjusted font-size using rem units for scalability */
+      font-size: 1rem;
     }
-}
-
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 768px) {
     .info-bar {
-        margin: 20px auto;
-        max-height: 100vh;
-        height: auto; 
+      margin: 20px auto;
+      max-height: 100vh;
+      height: auto;
     }
-
+  
     .profile-photo img {
-        width: 120px;
-        height: 120px; /* Ensuring profile photo sizes adjust on medium screens */
+      width: 120px;
+      height: 120px;
     }
-
+  
     .info-text {
-        width: 90%;
-        font-size: 0.9rem; /* Slightly smaller font-size for better readability on smaller screens */
+      width: 90%;
+      font-size: 0.9rem;
     }
-
+  
     .info-text p {
-        font-size: 0.9rem; /* Consistent font-size with .info-text */
+      font-size: 0.9rem;
     }
-}
-
-@media screen and (max-width: 480px) {
+  }
+  
+  @media screen and (max-width: 480px) {
     .profile-photo img {
-        width: 100px;
-        height: 100px; /* Ensuring profile photo sizes adjust on small screens */
+      width: 100px;
+      height: 100px;
     }
-
+  
     .info-bar {
-        margin: 20px auto;
-        max-height: 100vh;
-        height: auto; 
+      margin: 20px auto;
+      max-height: 100vh;
+      height: auto;
     }
-
+  
     .info-text {
-        width: 95%;
-        font-size: 0.8rem; /* Further reduced font-size for very small screens */
+      width: 95%;
+      font-size: 0.8rem;
     }
-
+  
     .info-text p {
-        font-size: 0.8rem; /* Consistent font-size with .info-text */
+      font-size: 0.8rem;
     }
-}
+  }
+  
