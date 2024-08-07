@@ -9,7 +9,8 @@
     width: 100%;
     max-width: 900px;
     min-width: 400px;
-    max-height: 100vh;
+    max-height: 110vh;
+    height: auto; 
     overflow-y: auto;
     z-index: 1;
 }
@@ -118,7 +119,8 @@ li {
 @media screen and (max-width: 1024px) {
     .info-bar {
         margin: 20px auto;
-        /* No need to adjust height; height will adapt to content */
+        max-height: 100vh;
+        height: auto; 
     }
 
     .info-text {
@@ -134,7 +136,8 @@ li {
 @media screen and (max-width: 768px) {
     .info-bar {
         margin: 20px auto;
-        /* No need to adjust height; height will adapt to content */
+        max-height: 100vh;
+        height: auto; 
     }
 
     .profile-photo img {
@@ -160,7 +163,8 @@ li {
 
     .info-bar {
         margin: 20px auto;
-        /* No need to adjust height; height will adapt to content */
+        max-height: 100vh;
+        height: auto; 
     }
 
     .info-text {
