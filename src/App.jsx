@@ -9,6 +9,8 @@ import Contact from './Contact';
 import Loading from './Loading';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,7 +40,7 @@ function App() {
               className={`info-bar-toggle ${isNavbar ? 'navbar-button' : 'sidebar-button'}`}
               onClick={toggleInfoBar}
             >
-              {isNavbar ? 'Profile ↓' : '→'}
+              <FontAwesomeIcon icon={faAddressCard} />
             </button>
             {infoBarVisible && <InfoBar />}
             <div className="main-container">

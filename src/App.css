@@ -85,36 +85,36 @@ html, body {
 
 /* Sidebar button styles */
 .sidebar-button {
-  height: 60px; /* Suurempi korkeus */
-  width: 40px; /* Suurempi leveys */
-  font-size: 24px; /* Suurempi fonttikoko */
+  height: 60px; 
+  width: 40px;
+  font-size: 24px;
   position: fixed;
-  top: 20px; /* Ylös: säädä tarpeen mukaan */
-  right: 20px; /* Oikealle: säädä tarpeen mukaan */
-  background-color: var(--secondary-color); /* Taustaväri */
-  color: white; /* Tekstiväri */
+  top: 20px; 
+  right: 20px; 
+  background-color: var(--secondary-color); 
+  color: white; 
   border: none;
-  border-radius: 50%; /* Pyöreä nappi */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Varjostus */
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Siirtymäefektit */
-  z-index: 10; /* Varmista, että nappi on muiden yläpuolella */
+  transition: background-color 0.3s, transform 0.3s; 
+  z-index: 10;
 }
 
 .info-bar-toggle .sidebar-button:hover {
-  background-color: var(--primary-color); /* Väri hover-tilassa */
-  transform: scale(1.1); /* Suurentaa nappia hover-tilassa */
+  background-color: var(--primary-color);
+  transform: scale(1.1); 
 }
 
 .info-bar-toggle .sidebar-button:focus {
-  outline: none; /* Poistaa oletusfokuksen */
+  outline: none; 
 }
 
 .info-bar-toggle .sidebar-button i {
-  font-size: 24px; /* Ikonin koko */
+  font-size: 24px;
 }
 
 

@@ -6,11 +6,11 @@
     color: #ecf0f1;
     border-radius: 10px;
     margin: 20px auto;
-    position: fixed; /* Changed to fixed to stay in position */
-    width: 400px; /* Fixed width */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    position: fixed; 
+    width: 400px; 
+    max-width: 100%; 
     height: auto; 
-    max-height: calc(100vh - 60px); /* Adjust based on header height */
+    max-height: calc(100vh - 60px); 
     overflow-y: auto;
     z-index: 1;
 }
