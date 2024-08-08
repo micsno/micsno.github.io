@@ -101,7 +101,7 @@ function Projects() {
         },
         {
             title: 'Budget Manager',
-            description: 'This code that calculates the cost of a trip based on the distance traveled, fuel efficiency of the vehicle, and the current price of fuel in Euros. ',
+            description: 'The Budget Manager is a Python script designed to help users manage their budget entries.',
             fullDescription: 'Budget Manager is a Python script designed to help users manage their finances by allowing them to add income and expense entries, view summaries, and save or load data from a file (budget.json). Key features include adding entries with details such as amount, category, and date; viewing total income, expenses, and balance; displaying category-based summaries; saving and loading entries from a JSON file; and plotting a bar chart of expenses and incomes by category using matplotlib. It also provides a simple command-line interface for easy interaction.',
             imageUrl: budgetmanager,
             githubUrl: 'https://github.com/micsno/BudgetManager',
@@ -109,7 +109,7 @@ function Projects() {
         },
         {
             title: 'Trip Cost Calculator',
-            description: 'The Budget Manager is a Python script designed to help users manage their budget entries.',
+            description: 'This code that calculates the cost of a trip based on the distance traveled, fuel efficiency of the vehicle, and the current price of fuel in Euros. ',
             fullDescription: 'TripCostCalculator is a Python script designed to help users estimate the total cost of a road trip. By inputting details such as the distance of the trip, the fuel efficiency of the vehicle, and the price of fuel, the script calculates and displays the total travel cost. This tool provides an easy way to budget for travel expenses based on fuel consumption.',
             imageUrl: tripcostcalculator,
             githubUrl: 'https://github.com/micsno/TripCostCalculator',
