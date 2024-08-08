@@ -1,6 +1,7 @@
 .contact-page {
   padding: 20px;
   max-width: 1200px;
+  min-height: 80vh;
   margin: 0 auto;
 }
 

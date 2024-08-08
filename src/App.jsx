@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useEffect, useState } from 'react';
 import './App.css'; 
 import Header from './Header';
@@ -40,7 +41,7 @@ function App() {
               className={`info-bar-toggle ${isNavbar ? 'navbar-button' : 'sidebar-button'}`}
               onClick={toggleInfoBar}
             >
-              <FontAwesomeIcon icon={faAddressCard} />
+              <FontAwesomeIcon icon={faAddressCard} style={{ fontSize: '1.5rem', color: 'orange' }} />
             </button>
             {infoBarVisible && <InfoBar />}
             <div className="main-container">
