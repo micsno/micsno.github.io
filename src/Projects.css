@@ -15,6 +15,12 @@
     -webkit-text-fill-color: transparent;
 }
 
+.projects-header p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
 /* Grid Layout for Projects */
 .projects-grid {
     display: grid;
