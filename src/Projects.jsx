@@ -9,6 +9,7 @@ import orange from '/src/assets/orangeforum.png';
 import luovacraft from '/src/assets/luovacrafttemplate.jpg';
 import portfolio from '/src/assets/portfolio.png';
 import koodikaveri from '/src/assets/koodikaveri.jpg';
+import hikefuel from '/src/assets/hikefuelapi.png';
 
 const Modal = ({ isOpen, onClose, project }) => {
     const [isImageZoomed, setImageZoomed] = useState(false);
@@ -73,15 +74,22 @@ function Projects() {
             fullDescription: "This portfolio website was developed to showcase my skills and projects as a web developer. It features a clean and responsive design with smooth animations and interactive elements. Built with React, CSS, and HTML, the site provides an engaging user experience that highlights my work and expertise. The website includes sections for my projects, about section, and contact information, allowing visitors to explore my portfolio and get in touch. The project demonstrates my proficiency in front-end development, including layout design, state management, and component-based architecture. It also showcases my creativity and attention to detail in crafting visually appealing and user-friendly web experiences.",
             imageUrl: portfolio,
             githubUrl: 'https://github.com/micsno/micsno.github.io',
-            technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML5', 'SCSS'],
+            technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML5', 'SCSS', 'Node.js'],
         },
         {
             title: "Rica's Decals",
             description: 'This portfolio website was developed to display a curated collection of custom-made knives, stickers, and textile prints.',
             fullDescription: "This portfolio website was developed to display a curated collection of custom-made knives, stickers, and textile prints. Built with HTML, CSS, and JavaScript, the site features a clean and responsive design that showcases each product with high-quality images and detailed descriptions. The website is crafted to highlight the artist’s unique creations, with a focus on visual appeal and usability. It ensures a seamless experience across different devices, from desktops to smartphones. Interactive elements implemented with JavaScript enhance user interaction, such as smooth scrolling and dynamic content updates. Each product is presented with its own dedicated section, including images and descriptions that reflect the craftsmanship and creativity behind the items. The portfolio demonstrates not only the artist's craftsmanship but also my skills in web development, including layout design, user interface optimization, and interactive features.",
             imageUrl: ricas,
-            websiteURL: 'https://www.ricas.fi',
+            websiteURL: 'https://www.ricasdecals.fi',
             technologies: ['HTML5', 'CSS', 'JavaScript'],
+        },
+        {
+            title: "HikeFuel API",
+            description: 'The API for a hiking recipe application supports recipe search and filtering, user management, and secure registration. It allows users to add, edit, and delete recipes, update profiles, manage reviews, and like recipes, creating a secure and interactive environment.',
+            fullDescription: "HikeFuel API is designed for a hiking recipe application, offering a rich set of features to provide a seamless and interactive user experience. The API allows users to search and filter recipes based on keywords to easily find the dishes they are interested in, and registered users can add new recipes, edit their own recipes, and delete them as needed. The API supports user registration with strong password protection to ensure security, enabling registered users to log in, update their profile information, and delete their accounts. \n Users can leave reviews on recipes, edit or remove their reviews, and like recipes to keep track of their favorites and enhance their personalized experience. \n All interactions with the API are designed with security in mind, including robust password protection and secure data handling practices to safeguard user information. \n This API is designed to create a comprehensive and secure environment for managing hiking recipes and user interactions, aiming to enhance both functionality and user engagement within the application.",
+            imageUrl: hikefuel,
+            technologies: ['JavaScript', 'Node.js', 'Express', 'PostgreSQL', 'Bcrypt', 'JWT', 'CORS', 'Multer', 'sharp', 'morgan']
         },
         {
             title: 'Koodikaveri',
@@ -97,7 +105,7 @@ function Projects() {
             fullDescription: 'Cherry Library is a project developed as part of the Buutti Education web development course in 2024. The project leverages React and Vite to build a modern and efficient web application. The application allows users to browse a collection of books, view details about each book, and add new books to the library. The project also includes a search feature to filter books by title, author, or genre.',
             imageUrl: cherry,
             githubUrl: 'https://github.com/micsno/KirsikkaLibrary',
-            technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML5'],
+            technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'HTML5', 'Node.js'],
         },
         {
             title: 'Budget Manager',
@@ -171,8 +179,11 @@ function Projects() {
                     <button onClick={() => handleTechnologyFilter('React')}>React</button>
                     <button onClick={() => handleTechnologyFilter('Python')}>Python</button>
                     <button onClick={() => handleTechnologyFilter('JavaScript')}>JavaScript</button>
+                    <button onClick={() => handleTechnologyFilter('Node.js')}>Node.js</button>
                     <button onClick={() => handleTechnologyFilter('HTML5')}>HTML5</button>
                     <button onClick={() => handleTechnologyFilter('CSS')}>CSS</button>
+                    <button onClick={() => handleTechnologyFilter('SCSS')}>SCSS</button>
+                    <button onClick={() => handleTechnologyFilter('PostgreSQL')}>PostgreSQL</button>
                 </div>
             </header>
             <div className="projects-grid">
